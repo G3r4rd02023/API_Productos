@@ -1,0 +1,33 @@
+###
+POST http://localhost:3000/productos HTTP/1.1
+Content-Type: application/json
+
+{
+  "CodigoBarra": "74838422",
+  "Nombre": "borrame",
+  "Categoria": "borrame",
+  "Marca": "borrame",
+  "Precio": 349.99  
+}
+
+###
+PUT http://localhost:3000/productos/2 HTTP/1.1
+Content-Type: application/json
+
+{
+  "CodigoBarra": "1234567",
+  "Nombre": "Mouse",
+  "Categoria": "Tecnologia",
+  "Marca": "Mixie",
+  "Precio": 249.99,
+  "IdProducto": 1  
+}
+
+###
+DELETE http://localhost:3000/productos/4 HTTP/1.1
+
+###
+GET http://localhost:3000/productos HTTP/1.1
+
+###
+GET http://localhost:3000/productos/3 HTTP/1.1
